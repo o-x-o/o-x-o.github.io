@@ -3,8 +3,8 @@ layout: default
 title: 我的领域
 ---
 　　<h2>{{ page.title }}</h2>
-　　<p>no one want to be quiet</p>
-　　<ul>
+　　<p>no one want to be quiet.</p>
+　　<ul style="text-align:left;">
 　　　　{% for post in site.posts %}
 　　　　　　<li>{{ post.date | date_to_string }} <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
 　　　　{% endfor %}
