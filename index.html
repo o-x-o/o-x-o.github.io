@@ -2,10 +2,12 @@
 layout: default
 title: 我的领域
 ---
-　　<h2>{{ page.title }}</h2>
-　　<p>no one want to be quiet.</p>
-　　<ul style="text-align:left;">
+　　<h1 style="color: #999;border-bottom:1px solid #e0e0e0;font-style:italic;text-align:left;">z0ne</h1>
+　
+　　<ul style="text-align:left;margin-bottom:100px;">
 　　　　{% for post in site.posts %}
-　　　　　　<li>{{ post.date | date_to_string }} <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
+　　　　　　<li><i style="color: #aaa;">{{ post.date | date_to_string }}</i> <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
 　　　　{% endfor %}
 　　</ul>
+
+　
