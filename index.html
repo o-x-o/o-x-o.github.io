@@ -2,11 +2,9 @@
 layout: default
 title: 我的领域
 ---
-　　<h1 style="color: #666;font-style:italic;text-align:center;">z0ne</h1>
-　
-　　<ul style="text-align:left;margin:50px auto 120px;">
+　　<ul style="text-align:left;margin:0px auto 0px;">
 　　　　{% for post in site.posts %}
-　　　　　　<li><a href="{{ site.baseurl }}{{ post.url }}"> {{ post.title }} <i style="color: #aaa;float:right;">{{ post.date | date_to_string }}</i></a></li>
+　　　　　　<li style="text-indent:60px;"><a href="{{ site.baseurl }}{{ post.url }}"> {{ post.title }} <i style="color: #aaa;float:right;">{{ post.date | date_to_string }}</i></a></li>
 　　　　{% endfor %}
 　　</ul>
 
